@@ -1,8 +1,8 @@
-Creacion de un proyecto llamado ONG-Animalitos, para el curso de informatica desarrollo de Web
-PGY3121 Duoc UC sede Viña del Mar
-Profesor Ignacio Cuturrufo
-
-Color palette:
+<h1>Creacion de un proyecto llamado ONG-Animalitos, para el curso de informatica desarrollo de Web</h1>
+<h2>PGY3121 Duoc UC sede Viña del Mar</h2>
+<h2>Profesor Ignacio Cuturrufo</h2>
+<hr>
+<h1>Color palette:</h1>
 
 <p>CelesteBold27B5D9</p>
 <p>CelesteFuerte2CC9DA</p>
