@@ -4,10 +4,10 @@ Profesor Ignacio Cuturrufo
 
 Color palette:
 
-CelesteBold27B5D9
-CelesteFuerte2CC9DA
-Turquoise:47DCE2
-Celeste:90E0DD
-LightSmokeWhite:EDEAE1
-LightGreen:9FD693
-BoldGreen:87C76D
+<p>CelesteBold27B5D9</p>
+<p>CelesteFuerte2CC9DA</p>
+<p>Turquoise:47DCE2</p>
+<p>Celeste:90E0DD</p>
+<p>LightSmokeWhite:EDEAE1</p>
+<p>LightGreen:9FD693</p>
+<p>BoldGreen:87C76D</p>
