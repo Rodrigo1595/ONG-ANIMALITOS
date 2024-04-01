@@ -2,9 +2,6 @@
 //      $("#nav-bar-full").replaceWith(data);
 // });
 
-alert("Esto está corriendo en el motor de JavaScript");
-console.log('Esto es sincrono')
-
 // Define an async function
 async function fetchData() {
     try {
@@ -22,9 +19,3 @@ async function fetchData() {
       console.error('Error fetching data:', error);
     }
 }
-
-let respuesta = fetchData();
-
-
-debugger;
-
