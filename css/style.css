@@ -30,3 +30,14 @@
 .hearts{
     color: red;
 }
+
+.carousel{
+    width: 70%;
+    height: 70%;
+
+}
+.carousel-item img{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
