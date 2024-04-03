@@ -11,100 +11,98 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body class="body-main">
   <div data-include="nav-bar"></div>
-  
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-    <br />
-<!--Caja completa para centrar formulario-->
+  <!--Caja completa para centrar formulario-->
   <div class="container align-items-center">
     <div class="text-center pt-4 fw-bolder fs-3"> 
       <h1>Formulario para adoptar a tu amigo</h1>
     </div>
-    <br />
-                                                                        <!--NOMBRE COMPLETO-->
-    <form class="row g-3">
+
+<!--NOMBRE COMPLETO-->
+    <form class="row g-3 mx-auto mt-4" >
       <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Nombre" aria-label="nombreFormulario" />
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" placeholder="Nombre" aria-label="nombreFormulario" required />
       </div> 
 
 
       <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Primer Apellido" aria-label="apellido1Formulario" />
+        <label for="apellido1">Primer apellido:</label>
+        <input type="text" class="form-control" placeholder="Primer Apellido" aria-label="apellido1Formulario" required />
 
       </div>
 
 
       <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Segundo Apellido" aria-label="apellido2Formulario" />
+        <label for="apellido2">Segundo Apellido:</label>
+        <input type="text" class="form-control" placeholder="Segundo Apellido" aria-label="apellido2Formulario" required />
       </div>
 
-                                                                        <!--TELEFONO-->
+<!--TELEFONO-->
       <div class="col-md-4">
-        <input type="text" class="form-control" placeholder="Telefono" aria-label="telefonoFormulario" />
+        <label for="telefono">Telefono:</label>
+        <input type="text" class="form-control" placeholder="Ingrese Telefono" aria-label="telefonoFormulario" required />
 
       </div>
 
-                                                                        <!--MAIL-->
+ <!--MAIL-->                                                                
 
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" />
+        <input type="email" class="form-control" id="inputEmail4" required />
       </div>
-                                                                       <!--DIRECCION-->
+<!--DIRECCION-->
       <div class="col-12">
         <label for="inputAddress" class="form-label">Dirección</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Calle Principal" />
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Calle Principal" required/>
       </div>
-                                                                        <!--TIPO DE VIVIENDA-->  
+<!--TIPO DE VIVIENDA-->  
       <div class="col-12">
         <label for="inputAddress2" class="form-label">Dirección 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, oficina, casa..." />
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, oficina, casa..." required/>
       </div>
-                                                                       <!--REGION-->
+<!--REGION-->
       <div class="col-md-6">
         <label for="inputCity" class="form-label">Region</label>
-        <select id="inputCity" class="form-select">
-          <option selected>Seleccionar...</option>
-          <option>Valparaiso</option>
-          <option>Metropolitana</option>
-          <option>O'Higgins</option>
-          <option>La Araucania</option>
+        <select id="inputCity" class="form-select" required>
+          <option value="">Seleccionar...</option>
+          <option value="Valparaiso">Valparaiso</option>
+          <option value="Metropolitana">Metropolitana</option>
+          <option value="OHiggins">O'Higgins</option>
+          <option value="LaAraucania">La Araucania</option>
           
         </select>
       </div>
-                                                                       <!--COMUNA-->
+<!--COMUNA-->
       <div class="col-md-4">
         <label for="inputState" class="form-label">Comuna</label>
-        <select id="inputState" class="form-select">
-          <option selected>Seleccionar...</option>
-          <option>...</option>
-          <option>...</option>
+        <select id="inputState" class="form-select" required>
+          <option value="">Seleccionar...</option>
+          <option value="option1">...</option>
+          <option value="option2">...</option>
         </select>
       </div>
-                                                                        <!--CODIGO POSTAL-->
+<!--CODIGO POSTAL-->
       <div class="col-md-2">
         <label for="inputZip" class="form-label">Codigo Postal</label>
-        <input type="text" class="form-control" id="inputZip" />
+        <input type="text" class="form-control" id="inputZip" required/>
       </div>
-                                                                        <!--CHECK BOX-->
+<!--CHECK BOX-->
       <div class="col-12">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck" />
           <label class="form-check-label" for="gridCheck"> Recibir correos </label>
         </div>
       </div>
-                                                                        <!--BOTON REGISTRO-->
+<!--BOTON REGISTRO-->
       <div class="col-12">
         <button type="submit" class="btn-formulario">Registrar</button>
       </div>
     </form>
   </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -113,7 +111,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-
+  
   <script src="controlador/index.js"></script>
 
 </body>
