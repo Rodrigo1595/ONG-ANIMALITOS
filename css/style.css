@@ -1,3 +1,32 @@
 .body-main{
-    background-color: red;
+    background-color: whitesmoke;
+}
+
+.cambio-color:hover{
+    color:#47DCE2;
+}
+.cambio-color:active{
+    color:#27B5D9;
+}
+
+.navfooter{
+    background-image: linear-gradient(to right,#9FD693,#87C76D);
+}
+
+.footerimgs{
+    margin: 50px;
+    color: #EDEAE1 ;
+}
+
+.footerimgs:hover{
+    color:#47DCE2;
+}
+
+.footerimgs:active{
+    color:#27B5D9;
+}
+
+
+.hearts{
+    color: red;
 }

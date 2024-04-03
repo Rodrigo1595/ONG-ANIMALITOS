@@ -9,4 +9,9 @@ $(function(){
     });
 })
 
-debugger;
+// Iniciar reconocimiento tooltip
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+  
+
