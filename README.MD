@@ -4,8 +4,8 @@
 <hr>
 <h1>Color palette:</h1>
 
-<p>CelesteBold27B5D9</p>
-<p>CelesteFuerte2CC9DA</p>
+<p>CelesteBold:27B5D9</p>
+<p>CelesteFuerte:2CC9DA</p>
 <p>Turquoise:47DCE2</p>
 <p>Celeste:90E0DD</p>
 <p>LightSmokeWhite:EDEAE1</p>
