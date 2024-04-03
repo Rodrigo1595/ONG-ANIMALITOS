@@ -48,3 +48,25 @@
     height: 600px;
     object-fit: cover;
 }
+
+/* Aqui va las configuraciones de los botones del formulario */
+
+.btn-formulario{
+    background-color: #47DCE2;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+    border-width: 1px;
+    transition: background-color 0.5s ease;
+}
+
+.btn-formulario:hover{
+    background-color: #2CC9DA;
+    color: grey;  
+
+}
+
+.btn-formulario:active{
+    background-color: #27B5D9;
+    color: black;  
+
+}
