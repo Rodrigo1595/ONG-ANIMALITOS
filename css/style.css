@@ -1,4 +1,4 @@
-/* Se agrega un padding top de 40px porque hay una stickynavbar y esta ocupa espacio del body 
+/* Se agrega un padding top de 40px porque hay una stickynavbar y un stickyfooter 55px , esta ocupa espacio del body 
     por lo tanto se hace un relleno de la altura de la navbar */
 .body-main{
     background-color: whitesmoke;
