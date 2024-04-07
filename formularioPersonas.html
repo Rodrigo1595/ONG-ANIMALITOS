@@ -19,128 +19,171 @@
 
   <body class="body-main">
     <div data-include="nav-bar"></div>
-
-    <!--Caja completa para centrar formulario-->
-    <div class="container align-items-center">
-      <div class="text-center pt-4 fw-bolder fs-3">
-        <h1>Formulario para adoptar a tu amigo</h1>
-      </div>
-
-      <!--NOMBRE COMPLETO-->
-      <form class="row g-3 mx-auto mt-4">
-        <div class="col-md-6">
-          <label for="nombre">Nombre:</label>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Nombre"
-            aria-label="nombreFormulario"
-            required
-          />
-        </div>
-
-        <div class="col-md-6">
-          <label for="apellido1">Primer apellido:</label>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Primer Apellido"
-            aria-label="apellido1Formulario"
-            required
-          />
-        </div>
-
-        <div class="col-md-6">
-          <label for="apellido2">Segundo Apellido:</label>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Segundo Apellido"
-            aria-label="apellido2Formulario"
-            required
-          />
-        </div>
-
-        <!--TELEFONO-->
-        <div class="col-md-4">
-          <label for="telefono">Telefono:</label>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Ingrese Telefono"
-            aria-label="telefonoFormulario"
-            required
-          />
-        </div>
-
-        <!--MAIL-->
-
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" required />
-        </div>
-        <!--DIRECCION-->
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Dirección</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress"
-            placeholder="1234 Calle Principal"
-            required
-          />
-        </div>
-        <!--TIPO DE VIVIENDA-->
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Dirección 2</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="Departamento, oficina, casa..."
-            required
-          />
-        </div>
-        <!--REGION-->
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Region</label>
-          <select id="inputCity" class="form-select" required>
-            <option value="">Seleccionar...</option>
-            <option value="Valparaiso">Valparaiso</option>
-            <option value="Metropolitana">Metropolitana</option>
-            <option value="OHiggins">O'Higgins</option>
-            <option value="LaAraucania">La Araucania</option>
-          </select>
-        </div>
-        <!--COMUNA-->
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Comuna</label>
-          <select id="inputState" class="form-select" required>
-            <option value="">Seleccionar...</option>
-            <option value="option1">...</option>
-            <option value="option2">...</option>
-          </select>
-        </div>
-        <!--CODIGO POSTAL-->
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Codigo Postal</label>
-          <input type="text" class="form-control" id="inputZip" required />
-        </div>
-        <!--CHECK BOX-->
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck">
-              Recibir correos
-            </label>
+    <div class="container">
+      <div class="row">
+        <!--Caja completa para centrar formulario-->
+        <div class="container align-items-center">
+          <div class="text-center pt-4 fw-bolder fs-3">
+            <h1>Formulario para adoptar a tu amigo</h1>
           </div>
         </div>
-        <!--BOTON REGISTRO-->
-        <div class="col-12">
-          <button type="submit" class="btn-formulario">Registrar</button>
+      <div class="row mt-5">
+        <div class="col-4">          
+            <div id="miCarrusel" class="carousel slide  shadow p-3 mb-5 bg-white rounded mx-auto" data-bs-ride="carousel" >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="https://static.guiaongs.org/wp-content/uploads/2016/07/Adopta.jpg" class="d-block w-100" alt="Foto perrito">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="assets/imgs/perroydueno.jpg" class="d-block w-100" alt="Foto Dueño y perro">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="assets/imgs/pomerania.jpg" class="d-block w-100" alt="...">
+                </div>
+                <!-- Más elementos .carousel-item con imágenes -->
+              </div>
+              <!-- Controles del carrusel aquí -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0"  class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Atrás</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
         </div>
-      </form>
+        <div class="col-8">
+          <!--NOMBRE COMPLETO-->
+          <form class="row g-3 mx-auto mt-4">
+            <div class="col-md-6">
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+                aria-label="nombreFormulario"
+                required
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label for="apellido1">Primer apellido:</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Primer Apellido"
+                aria-label="apellido1Formulario"
+                required
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label for="apellido2">Segundo Apellido:</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Segundo Apellido"
+                aria-label="apellido2Formulario"
+                required
+              />
+            </div>
+
+            <!--TELEFONO-->
+            <div class="col-md-4">
+              <label for="telefono">Telefono:</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Ingrese Telefono"
+                aria-label="telefonoFormulario"
+                required
+              />
+            </div>
+
+            <!--MAIL-->
+
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" required />
+            </div>
+            <!--DIRECCION-->
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Dirección</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Calle Principal"
+                required
+              />
+            </div>
+            <!--TIPO DE VIVIENDA-->
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Dirección 2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress2"
+                placeholder="Departamento, oficina, casa..."
+                required
+              />
+            </div>
+            <!--REGION-->
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Region</label>
+              <select id="inputCity" class="form-select" required>
+                <option value="">Seleccionar...</option>
+                <option value="Valparaiso">Valparaiso</option>
+                <option value="Metropolitana">Metropolitana</option>
+                <option value="OHiggins">O'Higgins</option>
+                <option value="LaAraucania">La Araucania</option>
+              </select>
+            </div>
+            <!--COMUNA-->
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Comuna</label>
+              <select id="inputState" class="form-select" required>
+                <option value="">Seleccionar...</option>
+                <option value="option1">...</option>
+                <option value="option2">...</option>
+              </select>
+            </div>
+            <!--CODIGO POSTAL-->
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Codigo Postal</label>
+              <input type="text" class="form-control" id="inputZip" required />
+            </div>
+            <!--CHECK BOX-->
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" />
+                <label class="form-check-label" for="gridCheck">
+                  Recibir correos
+                </label>
+              </div>
+            </div>
+            <!--BOTON REGISTRO-->
+            <div class="col-12">
+              <button type="submit" class="btn-formulario">Registrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+      
+
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
