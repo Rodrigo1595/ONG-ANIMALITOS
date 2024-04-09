@@ -13,12 +13,19 @@
     color:#27B5D9;
 }
 
+.sombras-texto-navbar-selected{
+    text-shadow: 0 0 3px #27B5D9;
+}
+.sombras-texto-navbar-unselected{
+    text-shadow: 0 0 1px black;
+}
+
+
 .navfooter{
     background-image: linear-gradient(to right,#9FD693,#87C76D);
 }
 
 .footerimgs{
-    
     color: #EDEAE1 ;
 }
 
@@ -57,20 +64,24 @@
     color: black !important;
     border-radius: 10px 10px 10px 10px;
     border-width: 1px;
+    border-color: #27B5D9 !important;
     transition: background-color 0.5s ease;
 }
 
 .btn-formulario:hover{
     background-color: #2CC9DA !important;
-    color: grey !important;  
+    color: whitesmoke !important;
+    border-color: whitesmoke !important;  
 
 }
 
 .btn-formulario:active{
     background-color: #27B5D9 !important;
     color: black !important;  
+    border-color: black !important;
 
 }
+
 
 .btn-aceptar{
     color: white !important;
