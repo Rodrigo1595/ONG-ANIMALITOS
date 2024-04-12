@@ -30,6 +30,12 @@
     object-fit: cover;
 }
 
+.carousel-item-form img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
 
 /* Se agrega un padding top de 40px porque hay una stickynavbar y un stickyfooter 55px , esta ocupa espacio del body 
     por lo tanto se hace un relleno de la altura de la navbar */

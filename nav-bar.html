@@ -1,69 +1,34 @@
-<nav
-  class="navbar navbar-expand-lg navfooter border border-dark-subtle py-0 fixed-top"
->
+<nav class="navbar navbar-expand-lg navfooter border border-dark-subtle py-0 fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">
-      <img
-        src="assets/imgs/paw.svg"
-        width="30"
-        height="30"
-        class="d-inline-block align-top"
-        alt="Huella animal"
-      />
+      <img src="assets/imgs/paw.svg" width="30" height="30" class="d-inline-block align-top" alt="Huella animal" />
       S.U.A
     </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarScroll"
-      aria-controls="navbarScroll"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul
-        class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-        style="--bs-scroll-height: 100px"
-      >
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
         <li class="nav-item">
-          <a
-            class="nav-link fw-bolder sombras-texto-navbar-selected"
-            href="index.html"
-            >Inicio
+          <a class="nav-link fw-bolder sombras-texto-navbar-selected" href="index.html">Inicio
           </a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link sombras-texto-navbar-unselected"
-            href="formularioAnimalitos.html"
-            >Adopta un amigo<i class="bi bi-exclamation-circle ms-1"></i
-          ></a>
+          <a class="nav-link sombras-texto-navbar-unselected" href="formularioAnimalitos.html">Adopta un amigo<i
+              class="bi bi-exclamation-circle ms-1"></i></a>
         </li>
         <li>
-          <a
-            class="nav-link sombras-texto-navbar-unselected"
-            href="formularioPersonas.html"
-            >Registro personas</a
-          >
+          <a class="nav-link sombras-texto-navbar-unselected" href="formularioPersonas.html">Registro personas</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link sombras-texto-navbar-unselected" href="about.html"
-            >Nosotros</a
-          >
+          <a class="nav-link sombras-texto-navbar-unselected" href="about.html">Nosotros</a>
         </li>
       </ul>
 
       <form class="d-flex me-2" role="log">
-        <button
-          type="button"
-          class="btn btn-formulario"
-          data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop"
-        >
+        <button type="button" class="btn btn-formulario" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           Iniciar Sesión
           <i class="bi bi-box-arrow-in-right"></i>
         </button>
@@ -75,72 +40,42 @@
 </nav>
 
 <!-- Modal -->
-<div
-  class="modal fade"
-  id="staticBackdrop"
-  data-bs-backdrop="static"
-  data-bs-keyboard="false"
-  tabindex="-1"
-  aria-labelledby="staticBackdropLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header navfooter">
         <h1 class="modal-title fs-5" id="staticBackdropLabel">
           Iniciar Sesión
         </h1>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body bodyiniciosesion">
         <form class="m-2">
           <div class="form-group mb-1">
             <label for="exampleInputEmail1">E-Mail<i class="bi bi-envelope-at-fill ms-2"></i></label>
-            <input
-              type="email"
-              class="form-control mb-1"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Ingresar e-mail registrado"
-            />
+            <input type="email" class="form-control mb-1" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Ingresar e-mail registrado" />
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Contraseña<i class="bi bi-lock fw-bolder ms-2"></i></label>
-            <input
-              type="password"
-              class="form-control mt-1"
-              id="exampleInputPassword1"
-              placeholder="Ingrese Contraseña"
-            />
+            <input type="password" class="form-control mt-1" id="exampleInputPassword1"
+              placeholder="Ingrese Contraseña" />
           </div>
           <div class="form-group form-check mt-2">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1"
-              >Mantener inicio sesión</label
-            >
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">Mantener inicio sesión</label>
           </div>
           <div class="form-group text-center">
             <button type="submit" class="btn btn-formulario mt-3 ">Confirmar</button>
           </div>
-         
+
           <div class="form-group mt-3  text-center">
-            <a href="index.html">¿No tiene usuario? Regístrese aquí!</a>
+            <a href="formularioPersonas.html">¿No tiene usuario? Regístrese aquí!</a>
           </div>
         </form>
       </div>
       <div class="modal-footer navfooter">
-        <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-          Close
-        </button> -->
       </div>
     </div>
   </div>
