@@ -48,6 +48,33 @@
     
 }
 
+.fondo-panel{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    padding: 40px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.img-form{
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.shadow-card{
+    object-fit: cover;
+    border: 10px;
+    border-color: grey;
+    border-width: 10px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 8px 8px 5px grey;
+}
+.texto-carro{
+    text-align: center;
+    color: #1b5802;
+    text-shadow: 0 0 4px gray;
+} 
+
 .row-height{
     
 }
@@ -79,13 +106,6 @@
 .sombras-texto-navbar-unselected {
     text-shadow: 0 0 1px black;
 }
-
-.fondo-panel{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-    padding: 40px;
-    border-radius: 10px 10px 10px 10px;
-}
-    
 
 .navfooter {
     background-image: linear-gradient(to right, #9FD693, #87C76D);
