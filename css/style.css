@@ -41,9 +41,10 @@
     por lo tanto se hace un relleno de la altura de la navbar */
 
 .body-main {
-    background-color: whitesmoke;
+    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url('../assets/imgs/fondo-patitas.svg');
+    background-size: cover;
+    background-position: center;
     padding-top: 40px;
-    padding-bottom: 55px;
 }
 
 .cambio-color:hover {
@@ -62,6 +63,13 @@
     text-shadow: 0 0 1px black;
 }
 
+.fondo-panel{
+    background-color: #EDEAE1;
+    padding: 40px;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+    
 
 .navfooter {
     background-image: linear-gradient(to right, #9FD693, #87C76D);
