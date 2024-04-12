@@ -36,6 +36,18 @@
     object-fit: cover;
 }
 
+.img-about{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 10px;
+    border-color: grey;
+    border-width: 10px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 8px 8px 5px grey;
+    
+}
+
 
 /* Se agrega un padding top de 40px porque hay una stickynavbar y un stickyfooter 55px , esta ocupa espacio del body 
     por lo tanto se hace un relleno de la altura de la navbar */
@@ -45,6 +57,7 @@
     background-size: cover;
     background-position: center;
     padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .cambio-color:hover {
@@ -64,10 +77,9 @@
 }
 
 .fondo-panel{
-    background-color: #EDEAE1;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
     padding: 40px;
     border-radius: 10px 10px 10px 10px;
-    
 }
     
 
