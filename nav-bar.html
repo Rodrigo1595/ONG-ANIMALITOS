@@ -86,8 +86,10 @@
 >
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+      <div class="modal-header navfooter">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+          Iniciar Sesión
+        </h1>
         <button
           type="button"
           class="btn-close"
@@ -95,12 +97,50 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="modal-body">...</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+      <div class="modal-body bodyiniciosesion">
+        <form class="m-2">
+          <div class="form-group mb-1">
+            <label for="exampleInputEmail1">E-Mail<i class="bi bi-envelope-at-fill ms-2"></i></label>
+            <input
+              type="email"
+              class="form-control mb-1"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Ingresar e-mail registrado"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña<i class="bi bi-lock fw-bolder ms-2"></i></label>
+            <input
+              type="password"
+              class="form-control mt-1"
+              id="exampleInputPassword1"
+              placeholder="Ingrese Contraseña"
+            />
+          </div>
+          <div class="form-group form-check mt-2">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Mantener inicio sesión</label
+            >
+          </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-formulario mt-3 ">Confirmar</button>
+          </div>
+         
+          <div class="form-group mt-3  text-center">
+            <a href="index.html">¿No tiene usuario? Regístrese aquí!</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer navfooter">
+        <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
           Close
-        </button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        </button> -->
       </div>
     </div>
   </div>

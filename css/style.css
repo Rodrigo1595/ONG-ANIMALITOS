@@ -60,6 +60,9 @@
 .navfooter {
     background-image: linear-gradient(to right, #9FD693, #87C76D);
 }
+.bodyiniciosesion{
+    background-color: whitesmoke;
+}
 
 .footerimgs {
     color: #EDEAE1;
