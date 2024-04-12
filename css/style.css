@@ -36,7 +36,7 @@
     object-fit: cover;
 }
 
-.img-about{
+.img-about {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -45,23 +45,24 @@
     border-width: 10px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 8px 8px 5px grey;
-    
+
 }
 
-.fondo-panel{
+.fondo-panel {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
     padding: 40px;
     border-radius: 10px 10px 10px 10px;
 }
 
-.img-form{
+.img-form {
     width: 300px;
     height: 200px;
+    object-fit: cover;
     padding: 5px;
     border-radius: 10px 10px 10px 10px;
 }
 
-.shadow-card{
+.shadow-card {
     object-fit: cover;
     border: 10px;
     border-color: grey;
@@ -69,22 +70,18 @@
     border-radius: 15px 15px 15px 15px;
     box-shadow: 8px 8px 5px grey;
 }
-.texto-carro{
+
+.texto-carro {
     text-align: center;
     color: #1b5802;
     text-shadow: 0 0 4px gray;
-} 
-
-.row-height{
-    
 }
-
 
 /* Se agrega un padding top de 40px porque hay una stickynavbar y un stickyfooter 55px , esta ocupa espacio del body 
     por lo tanto se hace un relleno de la altura de la navbar */
 
 .body-main {
-    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url('../assets/imgs/fondo-patitas.svg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../assets/imgs/fondo-patitas.svg');
     background-size: cover;
     background-position: center;
     padding-top: 40px;
@@ -110,7 +107,8 @@
 .navfooter {
     background-image: linear-gradient(to right, #9FD693, #87C76D);
 }
-.bodyiniciosesion{
+
+.bodyiniciosesion {
     background-color: whitesmoke;
 }
 
