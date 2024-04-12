@@ -1,65 +1,90 @@
-/* Se agrega un padding top de 40px porque hay una stickynavbar y un stickyfooter 55px , esta ocupa espacio del body 
-    por lo tanto se hace un relleno de la altura de la navbar */
-.body-main{
-    background-color: whitesmoke;
-    padding-top: 40px;
-    padding-bottom: 55px;
-}
+/* Dispositivos extra pequeños smartphones 600px hacia abajo */
+@media screen and(max-width:600px) {}
 
-.cambio-color:hover{
-    color:#47DCE2;
-}
-.cambio-color:active{
-    color:#27B5D9;
-}
+/* Dispositivos pequeños smartphones tablets  600px hacia arriba */
+@media screen and(min-width:600px) {}
 
-.sombras-texto-navbar-selected{
-    text-shadow: 0 0 3px #27B5D9;
-}
-.sombras-texto-navbar-unselected{
-    text-shadow: 0 0 1px black;
-}
+/* Dispositivos medianos tablets 768px hacia arriba */
+@media screen and(min-width:768px) {}
 
+/* Dispositivos grandes laptops/desktops 992px hacia arriba */
+@media screen and(min-width:992px) {}
 
-.navfooter{
-    background-image: linear-gradient(to right,#9FD693,#87C76D);
-}
-
-.footerimgs{
-    color: #EDEAE1 ;
-}
-
-.footerimgs:hover{
-    color:#47DCE2;
-}
-
-.footerimgs:active{
-    color:#27B5D9;
-}
-
-.hearts{
-    color: red;
-}
+/* Dispositivos extra-grandes laptos grandes desktops grandes 1200px hacia arriba */
+@media screen and(min-width:1200px) {}
 
 /* Aqui va las configuraciones del carrusel */
-.carousel{
+.carousel {
     width: 70%;
     height: 70%;
     /* redondear cada una de las esquinas */
-    border-radius: 25px 25px 25px 25px; 
+    border-radius: 25px 25px 25px 25px;
     /* el overflow muestra (o no) la superposicion de la imagen , si este se muestra no se logra el efecto de redondeo */
     overflow: hidden;
 
 }
-.carousel-item img{
+
+.carousel-item img {
     width: 600px;
     height: 600px;
     object-fit: cover;
 }
 
+
+/* Se agrega un padding top de 40px porque hay una stickynavbar y un stickyfooter 55px , esta ocupa espacio del body 
+    por lo tanto se hace un relleno de la altura de la navbar */
+
+.body-main {
+    background-color: whitesmoke;
+    padding-top: 40px;
+    padding-bottom: 55px;
+}
+
+.cambio-color:hover {
+    color: #47DCE2;
+}
+
+.cambio-color:active {
+    color: #27B5D9;
+}
+
+.sombras-texto-navbar-selected {
+    text-shadow: 0 0 3px #27B5D9;
+}
+
+.sombras-texto-navbar-unselected {
+    text-shadow: 0 0 1px black;
+}
+
+
+.navfooter {
+    background-image: linear-gradient(to right, #9FD693, #87C76D);
+}
+
+.footerimgs {
+    color: #EDEAE1;
+}
+
+.footerimgs:hover {
+    color: #47DCE2;
+}
+
+.footerimgs:active {
+    color: #27B5D9;
+}
+
+.hearts {
+    color: red;
+}
+
+/* Aqui va las configuraciones del carrusel */
+
+
+
+
 /* Aqui va las configuraciones de los botones del formulario */
 
-.btn-formulario{
+.btn-formulario {
     background-color: #47DCE2 !important;
     color: black !important;
     border-radius: 10px 10px 10px 10px;
@@ -68,52 +93,54 @@
     transition: background-color 0.5s ease;
 }
 
-.btn-formulario:hover{
+.btn-formulario:hover {
     background-color: #2CC9DA !important;
     color: whitesmoke !important;
-    border-color: whitesmoke !important;  
+    border-color: whitesmoke !important;
 
 }
 
-.btn-formulario:active{
+.btn-formulario:active {
     background-color: #27B5D9 !important;
-    color: black !important;  
+    color: black !important;
     border-color: black !important;
 
 }
 
 
-.btn-aceptar{
+.btn-aceptar {
     color: white !important;
     background-color: #87C76D !important;
     border: beige;
     border-radius: 5px;
 }
 
-.btn-aceptar:hover{
+.btn-aceptar:hover {
     background-color: #1b5802 !important;
     color: whitesmoke !important;
 
 }
 
-.btn-aceptar:active{
+.btn-aceptar:active {
     background-color: whitesmoke !important;
     color: #1b5802 !important;
 
 }
-.btn-cerrar{
+
+.btn-cerrar {
     color: white !important;
     background-color: darkcyan !important;
     border: beige;
     border-radius: 5px;
 }
 
-.btn-cerrar:hover{
-    background-color: darkslategray  !important;
+.btn-cerrar:hover {
+    background-color: darkslategray !important;
     color: whitesmoke !important;
 
 }
-.btn-cerrar:active{
+
+.btn-cerrar:active {
     background-color: whitesmoke !important;
     color: darkslategray !important;
 
