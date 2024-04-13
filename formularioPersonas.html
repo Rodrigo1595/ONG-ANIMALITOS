@@ -23,11 +23,11 @@
       </div>
       <div class="row mt-5">
         <div class="col-4 p-0 ">
-          <div id="miCarrusel" class="carousel slide  shadow-card  p-3 bg-white rounded mx-auto " data-bs-ride="carousel">
+          <div id="miCarrusel" class="carousel slide  shadow-card  p-3 bg-white rounded mx-auto "
+            data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item carousel-item-form  active" data-bs-interval="3000">
-                <img src="assets/imgs/gatobebe.jpg" class="d-block w-100"
-                  alt="Foto perrito">
+                <img src="assets/imgs/gatobebe.jpg" class="d-block w-100" alt="Foto perrito">
               </div>
               <div class="carousel-item carousel-item-form" data-bs-interval="3000">
                 <img src="assets/imgs/perroydueno.jpg" class="d-block w-100" alt="Foto Dueño y perro">
@@ -136,8 +136,10 @@
             </div>
             <!--BOTON REGISTRO-->
             <div class="col-12">
-              <button type="submit" class="btn btn-formulario">Registrar</button>
+              <button type="submit" class="btn btn-formulario" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrar</button>
+
             </div>
+            
           </form>
         </div>
       </div>
@@ -145,7 +147,27 @@
 
 
 
+    <!-- Button trigger modal -->
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="ms-3 bi bi-info-square-fill info me-3"></i>Información</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead m-3"> Usuario se a registrado con éxito. 😁 </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <a href="index.html"><button type="button" class="btn btn-formulario" >Continuar</button></a>        
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -156,6 +178,7 @@
 
     <script src="controlador/cargaFragmentos.js"></script>
 </body>
+
 <div data-include="footer"></div>
 
 </html>
