@@ -1,41 +1,130 @@
+<!-- * Esta Actividad es grupal
+* Debes crear un proyecto y utilizar Git como repositorio local. Durante  la actividad debes  realizar constantes actualizaciones del repositorio. Anota todos los pasos y comandos que realizas.
+*Utiliza el proyecto desarrollado en la actividad 2.2 y trabaja las validaciones con jQuery y selectores.
+1. Crear un formulario de postulación para el trabajo de apoyo ambiental para Chiloé.
+2. Los campos del formulario son: rut, apellido paterno, apellido materno, nombre, fecha de nacimiento, edad, género, email, celular, profesión, motivación para postular al trabajo.
+3. Realizar con JQueryy uso de selectores las siguientes validaciones a los campos del formulario:
+a. Rut: largo entre 9 y 10 caracteres.
+b. Nombre: largo entre 3 y 20 caracteres.
+c. Apellido paterno: largo entre 3 y 20 caracteres.
+d. Apellido materno: largo entre 3 y 20 caracteres.
+e. Edad: entre 18 y 35 años.
+f. Género: que sea seleccionado un género de la lista.
+g. Celular: largo entre 9 y 12.
+4. Todos los campos son requeridos. 
+5. Debe utilizar los siguientes componentes: Text, number, date, select, textarea.
+6. Debe haber un botón submit “Enviar”.
+7. Debe haber un botón submit “Crear Carta”.  Este botón llama a una función que genera una carta de presentación e intención para postular al trabajo.  Usted debe concatenar los datos ingresados en el formularios y generar un texto correspondiente a su carta, el que será asignado al campo textarea con el id=”carta”.
+8.Los formatos de CSS los debe crear en un archivo externo.
+9.Crear la estructura del proyecto en GitHub, todos los integrantes deben descargar el proyecto y trabajar cada uno en forma separada en el formulario, JQuery y CSS. Cada uno debe actualizar el repositorio para complementar el proyecto y probar su funcionamiento.  -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-  />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
 
   <body class="body-main">
     <div data-include="nav-bar"></div>
 
-    <div class="container fondo-panel border border-dark-subtle" style="margin-top: 20px">
-       
+    <div
+      class="container-fluid container-contacto d-flex flex-column justify-content-center align-items-center"
+    >
+    <div class="fondo-panel border border-dark-subtle">
+      <div class="header d-flex flex-column justify-content-center align-items-center ">
+        <h1 class="">Formulario de contacto con nuestro equipo de trabajo 💻</h1>
+        <p class="p-0 m-0"> ¿Te gustaría trabajar con nosotros? ¿Alguna duda con respecto al proceso? ¿o simplemente quieres felicitarnos 🥳?</p>
+        <p class="p-0 m-1">Déjanos  tu consulta en el siguiente formulario :</p>
+      </div>
+      <form action="" class="row-md-4 ">
+        <div class="input-group p-1 col-md-4">
+          <span class="input-group-text" id="basic-addon1">RUT</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="RUT Usuario"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+  
+        <div class="input-group p-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Recipient's username"
+            aria-label="Recipient's username"
+            aria-describedby="basic-addon2"
+          />
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+  
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <label for="basic-url" class="form-label">Your vanity URL</label>
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon3"
+              >https://example.com/users/</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="basic-url"
+              aria-describedby="basic-addon3 basic-addon4"
+            />
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <div class="form-text" id="basic-addon4">
+            Example help text goes outside the input group.
           </div>
-          <div class="mb-3">
-            <button type="submit" class="btn btn-formulario">Enviar</button>
-          </div>
-
+        </div>
+  
+        <div class="input-group mb-3">
+          <span class="input-group-text">$</span>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Amount (to the nearest dollar)"
+          />
+          <span class="input-group-text">.00</span>
+        </div>
+  
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+          />
+          <span class="input-group-text">@</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Server"
+            aria-label="Server"
+          />
+        </div>
+  
+        <div class="input-group">
+          <span class="input-group-text">With textarea</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+      </form>
+      
     </div>
       
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script

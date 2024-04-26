@@ -48,10 +48,24 @@
 
 }
 
+.fondo-panel-contacto {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    padding: 40px;
+    max-width: fit-content;
+    max-height: fit-content;
+    border-radius: 10px 10px 10px 10px;
+}
+
 .fondo-panel {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
     padding: 40px;
     border-radius: 10px 10px 10px 10px;
+}
+
+.container-contacto{
+    height: fit-content;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .img-form {
@@ -207,3 +221,4 @@
     border: beige;
     border-radius: 5px
 }
+
