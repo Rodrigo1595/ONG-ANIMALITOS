@@ -1,3 +1,23 @@
+<!-- * Esta Actividad es grupal
+* Debes crear un proyecto y utilizar Git como repositorio local. Durante  la actividad debes  realizar constantes actualizaciones del repositorio. Anota todos los pasos y comandos que realizas.
+*Utiliza el proyecto desarrollado en la actividad 2.2 y trabaja las validaciones con jQuery y selectores.
+1. Crear un formulario de postulación para el trabajo de apoyo ambiental para Chiloé.
+2. Los campos del formulario son: *rut*, apellido paterno, apellido materno, nombre, *fecha de nacimiento*, *edad*, *género*, email, celular, *profesión*, *motivación el por que quieres adoptar*.
+3. Realizar con JQueryy uso de selectores las siguientes validaciones a los campos del formulario:
+a. Rut: largo entre 9 y 10 caracteres.
+b. Nombre: largo entre 3 y 20 caracteres.
+c. Apellido paterno: largo entre 3 y 20 caracteres.
+d. Apellido materno: largo entre 3 y 20 caracteres.
+e. Edad: entre 18 y 35 años.
+f. Género: que sea seleccionado un género de la lista.
+g. Celular: largo entre 9 y 12.
+4. * Todos los campos son requeridos. 
+5. Debe utilizar los siguientes componentes: Text, number, date, select, textarea.
+6. Debe haber un botón submit “Enviar”.
+7. Debe haber un botón submit “Crear Carta”.  Este botón llama a una función que genera una carta de presentación e intención para postular a la adopcion.  Usted debe concatenar los datos ingresados en el formularios y generar un texto correspondiente a su carta, el que será asignado al campo textarea con el id=”carta”.
+8. Los formatos de CSS los debe crear en un archivo externo.
+9. Crear la estructura del proyecto en GitHub, todos los integrantes deben descargar el proyecto y trabajar cada uno en forma separada en el formulario, JQuery y CSS. Cada uno debe actualizar el repositorio para complementar el proyecto y probar su funcionamiento.  -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,12 +58,7 @@
               <!-- Más elementos .carousel-item con imágenes -->
             </div>
             <!-- Controles del carrusel aquí -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+            
             <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Atrás</span>
@@ -59,48 +74,86 @@
           <form class="row g-3 border border-dark-subtle fondo-panel p-2">
             <div class="col-md-6 m-0">
               <label for="nombre">Nombre:</label>
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="nombreFormulario" required />
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="nombreFormulario" required />
             </div>
 
             <div class="col-md-6 m-0">
               <label for="apellido1">Primer apellido:</label>
-              <input type="text" class="form-control" placeholder="Primer Apellido" aria-label="apellido1Formulario"
+              <input type="text" class="form-control" id="apellido1" placeholder="Primer Apellido" aria-label="apellido1Formulario"
                 required />
             </div>
 
             <div class="col-md-6">
               <label for="apellido2">Segundo Apellido:</label>
-              <input type="text" class="form-control" placeholder="Segundo Apellido" aria-label="apellido2Formulario"
+              <input type="text" class="form-control" id="apellido2" placeholder="Segundo Apellido" aria-label="apellido2Formulario"
                 required />
             </div>
 
-            <!--TELEFONO-->
-            <div class="col-md-4">
-              <label for="telefono">Telefono:</label>
-              <input type="text" class="form-control" placeholder="Ingrese Telefono" aria-label="telefonoFormulario"
+            <!--RUT-->
+            <div class="col-md-6">
+              <label for="rut">RUT:</label>
+              <input type="text" class="form-control" id="rut" placeholder="Ingrese Rut" aria-label="rutFormulario"
                 required />
+            </div>
+
+            <!--FECHA NACIMIENTO-->
+            <div class="col-md-6 mt-3">
+              <label for="fechaNac" class="form-label">Fecha Nacimiento:</label>
+              <input type="date"  class="form-control" id="fechaNac" name="fecha" required/>
+            </div>
+
+            <!--EDAD-->
+            <div class="col-md-4">
+              <label for="edad" class="form-label">Edad:</label>
+              <input type="number" class="form-control" id="edad" placeholder="Ingrese Edad" required />
+            </div>
+
+            <!--PROFESION-->          
+            <div class="col-md-6">
+              <label for="profesion">Profesión:</label>
+              <input type="text" class="form-control" id="profesion" placeholder="Ingrese Profesión" aria-label="profFormulario" required />
+            </div>
+
+            <!--GENERO-->
+            <div class="col-md-4 mt-2">
+              <label for="inputGender" class="form-label">Genero:</label>
+              <select id="inputGender" class="form-select" required>
+                <option value="">Seleccionar...</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="NoEstoySeguro">No estoy seguro</option>
+                <option value="PrefieroNoDecir">Prefiero no decir</option>                
+                <option value="Otro">Otro...</option>
+              </select>
             </div>
 
             <!--MAIL-->
-
             <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
+              <label for="inputEmail4" class="form-label">Email:</label>
               <input type="email" class="form-control" id="inputEmail4" placeholder="email@email.com" required />
             </div>
+
+            <!--TELEFONO-->
+            <div class="col-md-4 mt-4">
+              <label for="telefono">Telefono:</label>
+              <input type="number" class="form-control" id="telefono" placeholder="Ingrese Telefono" aria-label="telefonoFormulario"
+                required />
+            </div>
+            
             <!--DIRECCION-->
             <div class="col-12">
-              <label for="inputAddress" class="form-label">Dirección</label>
+              <label for="inputAddress" class="form-label">Dirección:</label>
               <input type="text" class="form-control" id="inputAddress" placeholder="1234 Calle Principal" required />
             </div>
             <!--TIPO DE VIVIENDA-->
             <div class="col-12">
-              <label for="inputAddress2" class="form-label">Dirección 2</label>
+              <label for="inputAddress2" class="form-label">Dirección 2:</label>
               <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, oficina, casa..."
                 required />
             </div>
             <!--REGION-->
             <div class="col-md-6">
-              <label for="inputCity" class="form-label">Region</label>
+              <label for="inputCity" class="form-label">Region:</label>
               <select id="inputCity" class="form-select" required>
                 <option value="">Seleccionar...</option>
                 <option value="Valparaiso">Valparaiso</option>
@@ -111,7 +164,7 @@
             </div>
             <!--COMUNA-->
             <div class="col-md-4">
-              <label for="inputState" class="form-label">Comuna</label>
+              <label for="inputState" class="form-label">Comuna:</label>
               <select id="inputState" class="form-select" required>
                 <option value="">Seleccionar...</option>
                 <option value="Limache">Limache</option>
@@ -122,10 +175,15 @@
             </div>
             <!--CODIGO POSTAL-->
             <div class="col-md-2">
-              <label for="inputZip" class="form-label">Codigo Postal</label>
-              <input type="text" class="form-control" id="inputZip" required />
+              <label for="inputZip" class="form-label">Codigo Postal:</label>
+              <input type="number" class="form-control" id="inputZip" required />
             </div>
-            <!--CHECK BOX-->
+
+            <!--MOTIVACIÓN-->            
+              <label for="motivacionTexto">Cuentanos que te motiva al querer adoptar: </label>
+              <textarea id="motivacionTexto" rows="4" cols="50"></textarea> 
+
+             <!--CHECK BOX-->
             <div class="col-12">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck" />
@@ -134,12 +192,13 @@
                 </label>
               </div>
             </div>
+
             <!--BOTON REGISTRO-->
             <div class="col-12">
-              <button type="submit" class="btn btn-formulario" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrar</button>
+              <button type="submit" class="btn btn-formulario" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
 
             </div>
-            
+                        
           </form>
         </div>
       </div>
@@ -159,7 +218,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p class="lead m-3"> Usuario se a registrado con éxito. 😁 </p>
+            <p class="lead m-3"> Postulación de usuario nuevo enviada con éxito.😁 </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
