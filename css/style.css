@@ -218,20 +218,20 @@
 
 }
 
-.btn-cerrar {
+.btn-opcionDos {
     color: white !important;
     background-color: darkcyan !important;
     border: beige;
     border-radius: 5px;
 }
 
-.btn-cerrar:hover {
+.btn-opcionDos:hover {
     background-color: darkslategray !important;
     color: whitesmoke !important;
 
 }
 
-.btn-cerrar:active {
+.btn-opcionDos:active {
     background-color: whitesmoke !important;
     color: darkslategray !important;
 
@@ -244,3 +244,14 @@
     border-radius: 5px
 }
 
+.btn-popover:hover {
+    background-color: darkslategray !important;
+    color: whitesmoke !important;
+
+}
+
+.btn-popover:active {
+    background-color: whitesmoke !important;
+    color: darkslategray !important;
+
+}
