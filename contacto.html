@@ -63,22 +63,34 @@ g. Celular: largo entre 9 y 12.
             <label for="nombre">Nombre:</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control is-invalid"
               placeholder="Nombre"
               aria-label="nombreFormulario"
               id="idNombreContacto"
             />
+            <div
+            id="validationServerUsernameFeedback"
+            class="invalid-feedback"
+          >
+            Porfavor ingresar un nombre entre 3 y 20 caracteres
+          </div>
           </div>
 
           <div class="col-md-6 mx-auto m-2">
             <label for="apellido1">Apellido:</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control is-invalid"
               placeholder="Apellido"
               aria-label="apellido1Formulario"
               id="idApellidoContacto"
             />
+            <div
+            id="validationServerUsernameFeedback"
+            class="invalid-feedback"
+          >
+            Porfavor ingresar un apellido entre 3 y 20 caracteres
+          </div>
           </div>
           <div class="col-md-4 mx-auto m-2">
             <label for="validationServerUsername" class="form-label"
@@ -88,7 +100,7 @@ g. Celular: largo entre 9 y 12.
               <span class="input-group-text" id="inputGroupPrepend1">📧</span>
               <input
                 type="email"
-                class="form-control"
+                class="form-control is-invalid"
                 placeholder="ejemplo@ejemplo.com"
                 id="idEmailContacto"
                 aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
@@ -97,7 +109,7 @@ g. Celular: largo entre 9 y 12.
                 id="validationServerUsernameFeedback"
                 class="invalid-feedback"
               >
-                Porfavor ingresar un correo válido
+                Porfavor ingresar un correo válido 15-100 carácteres
               </div>
             </div>
           </div>
@@ -109,7 +121,7 @@ g. Celular: largo entre 9 y 12.
               <span class="input-group-text" id="inputGroupPrepend2">📱</span>
               <input
                 type="number"
-                class="form-control"
+                class="form-control is-invalid"
                 placeholder="+56912345678"
                 id="idCelularContacto"
                 aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
@@ -118,7 +130,7 @@ g. Celular: largo entre 9 y 12.
                 id="validationServerUsernameFeedback"
                 class="invalid-feedback"
               >
-                Porfavor ingresar un celular válido
+                Porfavor ingresar un celular de largo entre 9 y 12 numeros
               </div>
             </div>
           </div>
@@ -129,7 +141,7 @@ g. Celular: largo entre 9 y 12.
             <div class="input-group has-validation">
               <span class="input-group-text" id="inputGroupPrepend3">💬</span>
               <select
-                class="form-select"
+                class="form-select is-invalid"
                 placeholder="Seleccionar..."
                 id="idMotivoContacto"
                 aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
@@ -156,11 +168,11 @@ g. Celular: largo entre 9 y 12.
             ></textarea>
           </div>
 
-          <div class="row">
-            <div class="col-1 m-1">
-              <button type="submit" class="btn btn-formulario">Enviar</button>
+          <div class="d-flex flex-row">
+            <div class="p-2">
+              <button type="submit" id="idButtonEnviar" class="btn btn-formulario" disabled>Enviar</button>
             </div>
-            <div class="col-2 ms-1 m-1">
+            <div class="p-2">
               <button
                 type="button"
                 class="btn btn-formulario-carta"
@@ -206,6 +218,7 @@ g. Celular: largo entre 9 y 12.
 
     <script src="controlador/cargaFragmentos.js"></script>
     <script src="controlador/modalContacto.js"></script>
+    <script src="controlador/validateForm.js"></script>
   </body>
   <div data-include="footer"></div>
 </html>
