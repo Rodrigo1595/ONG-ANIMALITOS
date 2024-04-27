@@ -40,6 +40,7 @@ $(document).ready(function() {
         }else{
             // Si el campo tiene contenido, elimina la clase 'is-invalid'
             $(this).removeClass("is-invalid");
+            $('#idButtonEnviar').removeAttr('disabled')
         }
     });
 
