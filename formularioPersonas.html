@@ -131,7 +131,7 @@ g. Celular: largo entre 9 y 12.
               <label for="rutPersonas">RUT:</label>
               <input 
                 type="text" 
-                class="form-control" 
+                class="form-control is-invalid" 
                 placeholder="123456789" 
                 aria-label="rutFormulario" 
                 id="rutPersonas"
@@ -150,7 +150,7 @@ g. Celular: largo entre 9 y 12.
               <div class="input-group has-validation"></div>
                 <input 
                   type="date"  
-                  class="form-control"                 
+                  class="form-control is-invalid"                 
                   name="fecha" 
                   id="fechaNacPersonas"
                   />
@@ -173,7 +173,7 @@ g. Celular: largo entre 9 y 12.
                   class="form-control is-invalid"  
                   placeholder="***" 
                   id="edadPersonas"
-                  aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                  aria-describedby="validationServerUsernameFeedback"
                 />
                 <div
                   id="validationServerUsernameFeedback"
@@ -386,9 +386,16 @@ g. Celular: largo entre 9 y 12.
               </div>
             
             <!--MOTIVACIÓN-->
+
+
+
             <div class="col-md-6 mx-auto">
               <label for="motivacionTexto">🐶Cuentanos que te motiva querer adoptar🐶 </label>
-              <textarea id="motivacionTexto" rows="4" cols="50"></textarea>
+              <textarea class="form-control"
+                        id="motivacionTexto" 
+                        rows="4" 
+                        cols="50">                        
+                      </textarea>
             </div>            
                
 
@@ -425,7 +432,7 @@ g. Celular: largo entre 9 y 12.
                       <h1 class="modal-title fs-5" id="modalPersonasLabel">Vista previa carta</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body" id="divModalBodyContent">
+                    <div class="modal-body" id="divModalPersonas">
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
@@ -437,7 +444,7 @@ g. Celular: largo entre 9 y 12.
 
             <!-- Button trigger modal -->
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- <div class="modal fade" id="modalPersonas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -452,7 +459,7 @@ g. Celular: largo entre 9 y 12.
                     <a href="index.html"><button type="button" class="btn btn-formulario" >Continuar</button></a>        
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>            
           </form>
         </div>
@@ -470,7 +477,8 @@ g. Celular: largo entre 9 y 12.
       crossorigin="anonymous"></script>
 
     <script src="controlador/cargaFragmentos.js"></script>
-    <script src="controlador/validateFormPersonas,js"></script>
+    <script src="controlador/modalPersonas.js"></script>
+    <script src="controlador/validateFormPersonas.js"></script>
 </body>
 
 <div data-include="footer"></div>

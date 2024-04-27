@@ -22,34 +22,34 @@ var oDatosFormulario = {
     motivacion: document.getElementById('motivacionTexto').value != undefined && document.getElementById('motivacionTexto').value != '' ? document.getElementById('motivacionTexto').value : 'No definido'
 }
 
-// Hacer vista previa de la carta
-$(document).ready(function () {
-    $('#divModalBodyContent').html(
-        `
-        <div class="fondo-panel border border-dark-subtle">
-        <h1 class="text-center m-3"> Formulario contacto S.U.A</h1>
-        <ul>
-            <li>Nombre : ${oDatosFormulario.nombre}</li>
-            <li>Apellido Paterno : ${oDatosFormulario.apellido}</li>
-            <li>Apellido Materno : ${oDatosFormulario.apellido2}</li>
-            <li>RUT : ${oDatosFormulario.rut}</li>
-            <li>F.Nacimiento : ${oDatosFormulario.nacimiento}</li>
-            <li>Edad : ${oDatosFormulario.edad}</li>
-            <li>Profesion : ${oDatosFormulario.profesion}</li>
-            <li>Genero : ${oDatosFormulario.genero}</li>
-            <li>E-Mail : ${oDatosFormulario.email}</li>
-            <li>Celular : ${oDatosFormulario.celular}</li>
-            <li>Dirección 1 : ${oDatosFormulario.direccion1}</li>
-            <li>Dirección 2 : ${oDatosFormulario.direccion2}</li>
-            <li>Region : ${oDatosFormulario.region}</li>
-            <li>Comuna : ${oDatosFormulario.comuna}</li>
-            <li>Codigo Postal : ${oDatosFormulario.zip}</li>            
-        </ul>
-        <label>Motivacion : </label>
-        <p>${oDatosFormulario.motivacion}</p>
-        <div>
-        `
-    )
-});
+    // Hacer vista previa de la carta del registro
+    $(document).ready(function () {
+        $('#divModalPersonas').html(
+            `
+            <div class="fondo-panel border border-dark-subtle">
+            <h1 class="text-center m-3"> Formulario personas S.U.A</h1>
+            <ul>
+                <li>Nombre : ${oDatosFormulario.nombre}</li>
+                <li>Apellido Paterno : ${oDatosFormulario.apellido}</li>
+                <li>Apellido Materno : ${oDatosFormulario.apellido2}</li>
+                <li>RUT : ${oDatosFormulario.rut}</li>
+                <li>F.Nacimiento : ${oDatosFormulario.nacimiento}</li>
+                <li>Edad : ${oDatosFormulario.edad}</li>
+                <li>Profesion : ${oDatosFormulario.profesion}</li>
+                <li>Genero : ${oDatosFormulario.genero}</li>
+                <li>E-Mail : ${oDatosFormulario.email}</li>
+                <li>Celular : ${oDatosFormulario.celular}</li>
+                <li>Dirección 1 : ${oDatosFormulario.direccion1}</li>
+                <li>Dirección 2 : ${oDatosFormulario.direccion2}</li>
+                <li>Region : ${oDatosFormulario.region}</li>
+                <li>Comuna : ${oDatosFormulario.comuna}</li>
+                <li>Codigo Postal : ${oDatosFormulario.zip}</li>            
+            </ul>
+            <label>Motivacion : </label>
+            <p>${oDatosFormulario.motivacion}</p>
+            <div>
+            `
+        )
+    });
 
 }
