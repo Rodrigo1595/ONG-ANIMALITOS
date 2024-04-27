@@ -48,11 +48,8 @@
 
 }
 
-.fondo-panel-contacto {
+.fondo-panel-interior {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-    padding: 40px;
-    max-width: fit-content;
-    max-height: fit-content;
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -171,6 +168,30 @@
 
 .btn-formulario:active {
     background-color: #27B5D9 !important;
+    color: black !important;
+    border-color: black !important;
+
+}
+
+
+.btn-formulario-carta {
+    background-color: #9FD693 !important;
+    color: black !important;
+    border-radius: 10px 10px 10px 10px;
+    border-width: 1px;
+    border-color: grey !important;
+    transition: background-color 0.5s ease;
+}
+
+.btn-formulario-carta:hover {
+    background-color: #87C76D !important;
+    color: whitesmoke !important;
+    border-color: whitesmoke !important;
+
+}
+
+.btn-formulario-carta:active {
+    background-color: #87C76D !important;
     color: black !important;
     border-color: black !important;
 

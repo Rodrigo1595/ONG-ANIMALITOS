@@ -3,7 +3,7 @@
 *Utiliza el proyecto desarrollado en la actividad 2.2 y trabaja las validaciones con jQuery y selectores.
 1. Crear un formulario de postulación para el trabajo de apoyo ambiental para Chiloé.
 2. Los campos del formulario son: rut, apellido paterno, apellido materno, nombre, fecha de nacimiento, edad, género, email, celular, profesión, motivación para postular al trabajo.
-3. Realizar con JQueryy uso de selectores las siguientes validaciones a los campos del formulario:
+3. Realizar con JQuery uso de selectores las siguientes validaciones a los campos del formulario:
 a. Rut: largo entre 9 y 10 caracteres.
 b. Nombre: largo entre 3 y 20 caracteres.
 c. Apellido paterno: largo entre 3 y 20 caracteres.
@@ -43,102 +43,169 @@ g. Celular: largo entre 9 y 12.
     <div
       class="container-fluid container-contacto d-flex flex-column justify-content-center align-items-center"
     >
-    <div class="fondo-panel border border-dark-subtle">
-      <div class="header d-flex flex-column justify-content-center align-items-center ">
-        <h1 class="">Formulario de contacto con nuestro equipo de trabajo 💻</h1>
-        <p class="p-0 m-0"> ¿Te gustaría trabajar con nosotros? ¿Alguna duda con respecto al proceso? ¿o simplemente quieres felicitarnos 🥳?</p>
-        <p class="p-0 m-1">Déjanos  tu consulta en el siguiente formulario :</p>
-      </div>
-      <form action="" class="row-md-4 ">
-        <div class="input-group p-1 col-md-4">
-          <span class="input-group-text" id="basic-addon1">RUT</span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="RUT Usuario"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
+      <div class="fondo-panel border border-dark-subtle">
+        <div
+          class="header d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="">
+            Formulario de contacto con nuestro equipo de trabajo 💻
+          </h1>
+          <p class="p-0 m-0">
+            ¿Te gustaría trabajar con nosotros? ¿Alguna duda con respecto al
+            proceso? ¿o simplemente quieres felicitarnos 🥳?
+          </p>
+          <p class="p-0 m-1">
+            Déjanos tu consulta en el siguiente formulario :
+          </p>
         </div>
-  
-        <div class="input-group p-2">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Recipient's username"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-          />
-          <span class="input-group-text" id="basic-addon2">@example.com</span>
-        </div>
-  
-        <div class="mb-3">
-          <label for="basic-url" class="form-label">Your vanity URL</label>
-          <div class="input-group">
-            <span class="input-group-text" id="basic-addon3"
-              >https://example.com/users/</span
-            >
+        <form action="" class="row g-3 fondo-panel-interior border mt-2">
+          <div class="col-md-6 mx-auto m-2">
+            <label for="nombre">Nombre:</label>
             <input
               type="text"
               class="form-control"
-              id="basic-url"
-              aria-describedby="basic-addon3 basic-addon4"
+              placeholder="Nombre"
+              aria-label="nombreFormulario"
+              id="idNombreContacto"
             />
           </div>
-          <div class="form-text" id="basic-addon4">
-            Example help text goes outside the input group.
+
+          <div class="col-md-6 mx-auto m-2">
+            <label for="apellido1">Apellido:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Apellido"
+              aria-label="apellido1Formulario"
+              id="idApellidoContacto"
+            />
           </div>
-        </div>
-  
-        <div class="input-group mb-3">
-          <span class="input-group-text">$</span>
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Amount (to the nearest dollar)"
-          />
-          <span class="input-group-text">.00</span>
-        </div>
-  
-        <div class="input-group mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Username"
-            aria-label="Username"
-          />
-          <span class="input-group-text">@</span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Server"
-            aria-label="Server"
-          />
-        </div>
-  
-        <div class="input-group">
-          <span class="input-group-text">With textarea</span>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
-      </form>
-      
-    </div>
-      
+          <div class="col-md-4 mx-auto m-2">
+            <label for="validationServerUsername" class="form-label"
+              >E-Mail</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend1">📧</span>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="ejemplo@ejemplo.com"
+                id="idEmailContacto"
+                aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+              />
+              <div
+                id="validationServerUsernameFeedback"
+                class="invalid-feedback"
+              >
+                Porfavor ingresar un correo válido
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mx-auto m-2">
+            <label for="validationServerUsername" class="form-label"
+              >Celular</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend2">📱</span>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="+56912345678"
+                id="idCelularContacto"
+                aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+              />
+              <div
+                id="validationServerUsernameFeedback"
+                class="invalid-feedback"
+              >
+                Porfavor ingresar un celular válido
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mx-auto m-2">
+            <label for="validationServerUsername" class="form-label"
+              >Motivo contacto</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend3">💬</span>
+              <select
+                class="form-select"
+                placeholder="Seleccionar..."
+                id="idMotivoContacto"
+                aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+              >
+                <option value="">Seleccionar...</option>
+                <option value="Felicitacion">Felicitación</option>
+                <option value="Consulta Administrativa">Consulta Administrativa</option>
+                <option value="Consulta Tecnica">Consulta Tecnica</option>
+                <option value="Reclamo">Reclamo</option>
+                <option value="Postulacion">Postulación</option>
+              </select>
+              <div id="validationMotivoContactoDiv" class="invalid-feedback">
+                Porfavor clickear una selección
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group mb-3 mx-auto m-2">
+            <span class="input-group-text">Comentarios</span>
+            <textarea
+              class="form-control"
+              aria-label="With textarea"
+              id="idComentariosContactos"
+            ></textarea>
+          </div>
+
+          <div class="row">
+            <div class="col-1 m-1">
+              <button type="submit" class="btn btn-formulario">Enviar</button>
+            </div>
+            <div class="col-2 ms-1 m-1">
+              <button
+                type="button"
+                class="btn btn-formulario-carta"
+                data-bs-toggle="modal"
+                data-bs-target="#idModalContacto"
+                onclick="traerDatosModal()"
+              >
+                Ver Carta
+              </button>
+            <!-- Modal -->
+            <div class="modal fade " id="idModalContacto" tabindex="-1" aria-labelledby="modalContactoLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalContactoLabel">Vista previa carta</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" id="divModalBodyContent">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+        </form>
+      </div>
     </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
 
     <script src="controlador/cargaFragmentos.js"></script>
+    <script src="controlador/modalContacto.js"></script>
   </body>
   <div data-include="footer"></div>
 </html>
