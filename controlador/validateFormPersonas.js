@@ -37,6 +37,18 @@ $(document).ready(function() {
             }
         }
         //5.- Revisar si la Edad es entre 18 y 35 años
+        if($(this).attr('id') == 'edadPersonas'){  
+
+            if ( value <= 17 || value >= 36 ){
+                flag = true                
+
+            }
+
+        }
+        
+            
+                
+            
         
 
         // Revisar si se activa la flag
