@@ -8,19 +8,3 @@ $(function () {
   });
 });
 
-// Iniciar reconocimiento tooltip
-$(document).ready(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-});
-
-const popoverTriggerList = document.querySelectorAll(
-  '[data-bs-toggle="popover"]'
-);
-const popoverList = [...popoverTriggerList].map(
-  (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
-);
-if (popoverList.length > 0 ) {
-  const popover = new bootstrap.Popover(".popover-dismiss", {
-    trigger: "focus",
-  });
-}
