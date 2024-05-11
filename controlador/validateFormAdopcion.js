@@ -1,45 +1,6 @@
 import { getKeys } from "../utils/api_keys_public.js";
 
 $(document).ready(function () {
-    //Carga API
-    let apiData = getKeys()
-    $.ajax({
-        type: "GET",
-        url: apiData.values[0].cat_base_url+"/images/search?limit=10",
-        headers:{
-            "Content-Type": "application/json",
-            "x-api-key": apiData.values[0].cat_api_key
-        },
-        success: function (response) {
-            response.forEach(element => {
-                let htmlAnimal = `
-
-                <div class="col-md-3 m-3 p-0">
-                  <div class="card shadow-card" style="width: 18rem">
-                    <img src="${element.url}" class="card-img-top img-form" alt="" />
-                    <div class="card-body">
-                      <h5 class="card-title">Placeholder</h5>
-                      <p class="card-text"></p>
-                      <div class="d-flex justify-content-evenly">
-                        <button type="button" class="btn btn-aceptar m-1" data-bs-toggle="modal" data-bs-target="#modalAdoptame">
-                          Adoptame!
-                        </button>
-                        <a tabindex="0" class="btn btn-popover m-1" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adopta a Nube" 
-                        data-bs-content="Hembra, 3 años, se lleva bien con otros animales.">Más info</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                `
-                $("#containerAnimales").append(htmlAnimal);
-            });
-        },
-        error: function(error){
-            console.log('No se pudo traer datos' , error)
-        }
-    });
-
-
     // Eventos
     $("input").focusout(function () {
 
@@ -90,10 +51,50 @@ $(document).ready(function () {
             $('.btn-aceptar').removeAttr('disabled')
         }
     });
-    // Iniciar reconocimiento tooltip
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
+    //Carga API
+    // Revisar carga de DOM para luego poner los tooltips
+    let apiData = getKeys()
+    $.ajax({
+        type: "GET",
+        url: apiData.values[0].cat_base_url + "/images/search?limit=10",
+        headers: {
+            "Content-Type": "application/json",
+            "x-api-key": apiData.values[0].cat_api_key
+        },
+        success: function (response) {
+            response.forEach(element => {
+                let htmlAnimal = `
+                    <div class="col-md-3 m-3 p-0">
+                      <div class="card shadow-card" style="width: 18rem">
+                        <img src="${element.url}" class="card-img-top img-form" alt="" />
+                        <div class="card-body">
+                          <h5 class="card-title">Placeholder</h5>
+                          <p class="card-text"></p>
+                          <div class="d-flex justify-content-evenly">
+                            <button type="button" class="btn btn-aceptar m-1" data-bs-toggle="modal" data-bs-target="#modalAdoptame">
+                              Adoptame!
+                            </button>
+                            <a tabindex="0" class="btn btn-popover m-1" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adopta a placeholder" 
+                            data-bs-content="Placeholder contenido">Más info</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    `
+                $("#containerAnimales").append(htmlAnimal);
+            });
+        },
+        error: function (error) {
+            console.log('No se pudo traer datos', error)
+        }
     });
+
+});
+
+$(window).on('load', function () {
+    // Iniciar reconocimiento tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+
 
     const popoverTriggerList = document.querySelectorAll(
         '[data-bs-toggle="popover"]'
@@ -106,6 +107,5 @@ $(document).ready(function () {
             trigger: "focus",
         });
     }
-
 });
 
