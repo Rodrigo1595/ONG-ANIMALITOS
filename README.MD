@@ -1,6 +1,6 @@
 # S.U.A Salva un Animalito
 
-![Logo](link-a-imagen-de-logo-aquí)  <!-- Puedes insertar una imagen de logo si tienes una disponible -->
+![Logo](https://github.com/Rodrigo1595/ONG-ANIMALITOS/blob/main/assets/imgs/favicon.jpg)  <!-- Puedes insertar una imagen de logo si tienes una disponible -->
 
 Bienvenidos al repositorio del proyecto S.U.A (Salva un Animalito), una iniciativa de ayuda y rescate animal desarrollada por estudiantes de Duoc UC sede Viña del Mar para el curso PGY3121.
 
