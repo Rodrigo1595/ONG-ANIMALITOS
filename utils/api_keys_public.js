@@ -10,6 +10,9 @@ export function getKeys() {
             {
                 "dog_base_url" :"https://api.thecatapi.com/v1",
                 "dog_api": "live_Zbirh4mupq5hGeMDO5kQT4m3lgemYIX4lowS5Tr7SZ93l4YF95Kz30coh17ViNUp"
+            },
+            {
+                "huachitos":"https://huachitos.cl/api/animales"
             }
 
         ]
