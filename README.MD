@@ -1,66 +1,60 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>S.U.A Salva un Animalito</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-        .header { background-color: #27B5D9; color: white; padding: 10px 20px; text-align: center; }
-        .section { margin: 20px; }
-        .footer { text-align: center; margin-top: 20px; padding: 10px; background-color: #EDEAE1; }
-        a { color: #2CC9DA; }
-    </style>
-</head>
-<body>
+# S.U.A Salva un Animalito
 
-<div class="header">
-    <h1>S.U.A Salva un Animalito</h1>
-    <p>Bienvenidos al proyecto de ayuda y rescate animal desarrollado por estudiantes de Duoc UC.</p>
-</div>
+![Logo](link-a-imagen-de-logo-aquí)  <!-- Puedes insertar una imagen de logo si tienes una disponible -->
 
-<div class="section">
-    <h2>Descripción</h2>
-    <p>Este proyecto busca conectar animales en riesgo con personas dispuestas a adoptarlos. Ofrecemos una plataforma fácil de usar para facilitar el proceso de adopción y ofrecer información vital sobre el cuidado de los animales.</p>
-</div>
+Bienvenidos al repositorio del proyecto S.U.A (Salva un Animalito), una iniciativa de ayuda y rescate animal desarrollada por estudiantes de Duoc UC sede Viña del Mar para el curso PGY3121.
 
-<div class="section">
-    <h2>Tecnologías Utilizadas</h2>
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Bootstrap 5</li>
-        <li>jQuery</li>
-    </ul>
-</div>
+## Descripción
 
-<div class="section">
-    <h2>Funcionalidades</h2>
-    <ul>
-        <li>Adopción de Animales</li>
-        <li>Reporte de Animales en Riesgo</li>
-        <li>Información y Consejos sobre el cuidado de mascotas</li>
-    </ul>
-</div>
+El proyecto ONG-Animalitos busca facilitar la conexión entre animales en situación de riesgo y personas dispuestas a brindarles un nuevo hogar. Este sitio web proporciona una plataforma fácil de usar para la adopción y el apoyo de animales necesitados.
 
-<div class="section">
-    <h2>Instalación</h2>
-    <ol>
-        <li>Clona el repositorio: <code>git clone [URL del repositorio]</code></li>
-        <li>Navega al directorio del proyecto: <code>cd SUA-Salva-un-Animalito</code></li>
-        <li>Instala las dependencias: <code>npm install</code></li>
-    </ol>
-</div>
+## Tecnologías Utilizadas
 
-<div class="section">
-    <h2>Proyecto en Vida</h2>
-    <p>Visita nuestro sitio web desplegado: <a href="https://ong-animalitos.vercel.app">ong-animalitos.vercel.app</a></p>
-</div>
+- **HTML5**
+- **CSS3**
+  - Paleta de colores:
+    - Celeste Bold: `#27B5D9`
+    - Celeste Fuerte: `#2CC9DA`
+    - Turquoise: `#47DCE2`
+    - Celeste: `#90E0DD`
+    - Light Smoke White: `#EDEAE1`
+    - Light Green: `#9FD693`
+    - Bold Green: `#87C76D`
+- **JavaScript**
+- **Bootstrap 5**
+- **jQuery**
 
-<div class="footer">
-    <p>Desarrollado por estudiantes de Duoc UC, bajo la supervisión del profesor Ignacio Cuturrufo.</p>
-    <p>Para más información, contacta a [correo de contacto].</p>
-</div>
+## Funcionalidades
 
-</body>
-</html>
+- **Adopción de Animales**: Busca y encuentra animales listos para ser adoptados.
+- **Reporte de Animales en Riesgo**: Permite a los usuarios reportar animales en situación de riesgo.
+- **Información y Consejos**: Ofrece consejos sobre el cuidado y mantenimiento de las mascotas.
+
+## Instalación
+
+Para poner en marcha el proyecto localmente, sigue estos pasos:
+
+1. Clona el repositorio:
+git clone [\[URL del repositorio\]](https://github.com/Rodrigo1595/ONG-ANIMALITOS.git)
+
+2. Navega al directorio del proyecto:
+cd SUA-Salva-un-Animalito
+
+3. Instala las dependencias:
+npm install
+
+
+## Proyecto en Vivo
+
+Este proyecto está desplegado y puede ser visitado en: [ong-animalitos.vercel.app](https://ong-animalitos.vercel.app)
+
+## Colaboradores
+
+Este proyecto fue desarrollado por estudiantes de Duoc UC, sede Viña del Mar, bajo la supervisión del profesor Ignacio Cuturrufo.
+
+## Contacto
+
+Para más información, puedes contactar a [correo de contacto]. Agradecemos cualquier colaboración o sugerencia.
+
+---
+Gracias por visitar nuestro proyecto y apoyar esta noble causa!
