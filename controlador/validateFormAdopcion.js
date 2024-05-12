@@ -128,6 +128,7 @@ async function getData(params) {
   }
 }
 
+//Capitalizar informacion en la descripción
 function capitalize(cadena) {
     return cadena.charAt(0).toUpperCase() + cadena.slice(1);
 }

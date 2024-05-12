@@ -15,8 +15,8 @@
 
 /* Aqui va las configuraciones del carrusel */
 .carousel {
-    width: 70%;
-    height: 70%;
+    height: 250px;
+    width: 400px;
     /* redondear cada una de las esquinas */
     border-radius: 25px 25px 25px 25px;
     /* el overflow muestra (o no) la superposicion de la imagen , si este se muestra no se logra el efecto de redondeo */
@@ -25,9 +25,11 @@
 }
 
 .carousel-item img {
-    width: 600px;
-    height: 600px;
+    position: relative;
     object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 300px;
 }
 
 .carousel-item-form img {
