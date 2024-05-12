@@ -21,8 +21,7 @@ var oDatosFormulario = {
     zip: document.getElementById('inputCodPostalPersonas').value != undefined && document.getElementById('inputCodPostalPersonas').value != '' ? document.getElementById('inputCodPostalPersonas').value : 'No definido',
     motivacion: document.getElementById('motivacionTexto').value != undefined && document.getElementById('motivacionTexto').value != '' ? document.getElementById('motivacionTexto').value : 'No definido'
 }
-
-    // Hacer vista previa de la carta del registro
+// Hacer vista previa de la carta del registro
     $(document).ready(function () {
         $('#divModalPersonas').html(
             `
@@ -50,6 +49,12 @@ var oDatosFormulario = {
             <div>
             `
         )
+
+        $('#divModalPersonasEnviar').html(`
+        <p class="lead m-3"> Postulación de usuario nuevo enviada con éxito.😁 
+            En los próximos días serás contactado por el e-mail y se te actualizará sobre tu status.
+        </p>
+        `);
     });
 
 }

@@ -24,6 +24,10 @@
 
 }
 
+#carouselanimalitos{
+    height: fit-content;
+}
+
 .carousel-item img {
     position: relative;
     object-fit: cover;
@@ -60,6 +64,7 @@
     padding: 40px;
     border-radius: 10px 10px 10px 10px;
 }
+
 
 .container-contacto{
     height: fit-content;

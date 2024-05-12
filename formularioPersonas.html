@@ -33,367 +33,239 @@ g. Celular: largo entre 9 y 12.
 
 <body class="body-main">
   <div data-include="nav-bar"></div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row mt-3">
-      <div class="col-6 container d-flex justify-content-end align-self-center text-center pt-4 fw-bolder fs-3">
+      <div class="col-6 container-fluid d-flex justify-content-end align-self-center text-center pt-4 fw-bolder fs-3">
         <h1>Registrar usuario</h1>
       </div>
-      <div class=" col-6 container d-flex justify-content-start m-0">
-        <div id="miCarrusel" class="carousel slide  shadow-card  bg-white rounded  "
-        data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item carousel-item-form  active" data-bs-interval="3000">
-            <img src="assets/imgs/gatobebe.jpg" class="d-block w-100" alt="Foto perrito">
+      <div class=" col-6 container-fluid d-flex justify-content-start m-0 p-3">
+        <div id="miCarrusel" class="carousel slide  shadow-card  bg-white rounded  " data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item carousel-item-form  active" data-bs-interval="3000">
+              <img src="assets/imgs/gatobebe.jpg" class="d-block w-100" alt="Foto perrito">
+            </div>
+            <div class="carousel-item carousel-item-form" data-bs-interval="3000">
+              <img src="assets/imgs/perroydueno.jpg" class="d-block w-100" alt="Foto Dueño y perro">
+            </div>
+            <div class="carousel-item carousel-item-form" data-bs-interval="3000">
+              <img src="assets/imgs/puppyandowner.jpg" class="d-block w-100" alt="...">
+            </div>
+            <!-- Más elementos .carousel-item con imágenes -->
           </div>
-          <div class="carousel-item carousel-item-form" data-bs-interval="3000">
-            <img src="assets/imgs/perroydueno.jpg" class="d-block w-100" alt="Foto Dueño y perro">
-          </div>
-          <div class="carousel-item carousel-item-form" data-bs-interval="3000">
-            <img src="assets/imgs/puppyandowner.jpg" class="d-block w-100" alt="...">
-          </div>
-          <!-- Más elementos .carousel-item con imágenes -->
+          <!-- Controles del carrusel aquí -->
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Atrás</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
-        <!-- Controles del carrusel aquí -->
-        
-        <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Atrás</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
       </div>
     </div>
     <div class="row m-1">
       <!--Caja completa para centrar formulario-->
-      <div class="container-fluid m-1">       
+      <div class="container-fluid m-1">
         <!-- Centrando formularo con container-fluid -->
-        <div class="container-fluid row mt-1 justify-content-center >
-          <div class="col-md-8  m-3">          
+        <div class="container-fluid row mt-1 justify-content-center">
+          <div class="col-md-8  m-3">
             <form action="" class="row g-3 border border-dark-subtle fondo-panel-interior p-2">
-  
+
               <!--NOMBRE-->
               <div class="col-md-6 mx-auto m-2">
                 <label for="nombrePersonas">Nombre:</label>
-                <input
-                  type="text"
-                  class="form-control is-invalid"
-                  placeholder="Nombre"
-                  aria-label="nombreFormulario"
-                  id="nombrePersonas"
-                  />
-                <div
-                id="validationServerUsernameFeedback"
-                class="invalid-feedback"
-              >
-                Porfavor ingresar un nombre entre 3 y 20 caracteres
+                <input type="text" class="form-control is-invalid" placeholder="Nombre" aria-label="nombreFormulario"
+                  id="nombrePersonas" />
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Porfavor ingresar un nombre entre 3 y 20 caracteres
+                </div>
               </div>
-              </div>
-  
+
               <!--APPATERNO-->
               <div class="col-md-6 mx-auto m-2">
                 <label for="apellidoPaPersonas">Apellido:</label>
-                <input
-                  type="text"
-                  class="form-control is-invalid"
-                  placeholder="Apellido"
-                  aria-label="apellido1Formulario"
-                  id="apellidoPaPersonas"
-                  />
-                <div
-                id="validationServerUsernameFeedback"
-                class="invalid-feedback"
-              >
-                Porfavor ingresar un apellido entre 3 y 20 caracteres
+                <input type="text" class="form-control is-invalid" placeholder="Apellido"
+                  aria-label="apellido1Formulario" id="apellidoPaPersonas" />
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Porfavor ingresar un apellido entre 3 y 20 caracteres
+                </div>
               </div>
-              </div>        
-  
+
               <!--APMATERNO-->
               <div class="col-md-6 mx-auto m-2">
                 <label for="apellidoMaPersonas">Apellido:</label>
-                <input
-                  type="text"
-                  class="form-control is-invalid"
-                  placeholder="Apellido"
-                  aria-label="apellido2Formulario"
-                  id="apellidoMaPersonas"
-                  />
-                <div
-                id="validationServerUsernameFeedback"
-                class="invalid-feedback"
-              >
-                Porfavor ingresar un apellido entre 3 y 20 caracteres
+                <input type="text" class="form-control is-invalid" placeholder="Apellido"
+                  aria-label="apellido2Formulario" id="apellidoMaPersonas" />
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Porfavor ingresar un apellido entre 3 y 20 caracteres
+                </div>
               </div>
-              </div>            
-  
+
               <!--RUT-->
               <div class="col-md-6 mx-auto m-2">
                 <label for="rutPersonas">RUT:</label>
-                <input 
-                  type="text" 
-                  class="form-control is-invalid" 
-                  placeholder="123456789" 
-                  aria-label="rutFormulario" 
-                  id="rutPersonas"
-                  />
-                <div
-                id="validationServerUsernameFeedback"
-                class="invalid-feedback"
-              >
-                Porfavor ingresar un RUT entre 9 y 10 caracteres
+                <input type="text" class="form-control is-invalid" placeholder="123456789" aria-label="rutFormulario"
+                  id="rutPersonas" />
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Porfavor ingresar un RUT entre 9 y 10 caracteres
+                </div>
               </div>
-              </div>
-  
+
               <!--FECHA NACIMIENTO-->
               <div class="col-md-8 mx-auto m-2">
                 <label for="fechaNacPersonas" class="form-label">Fecha Nacimiento:</label>
                 <div class="input-group has-validation"></div>
-                  <input 
-                    type="date"  
-                    class="form-control is-invalid"                 
-                    name="fecha" 
-                    id="fechaNacPersonas"
-                    />
-                    <div
-                    id="validationServerUsernameFeedback"
-                    class="invalid-feedback"
-                  >
-                    Porfavor ingresar una fecha
-                  </div>
+                <input type="date" class="form-control is-invalid" name="fecha" id="fechaNacPersonas" />
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Porfavor ingresar una fecha
+                </div>
               </div>
-  
+
               <!--EDAD-->
               <div class="col-md-4 mx-auto m-2">
-                <label for="edadPersonas" class="form-label"
-                  >Edad</label
-                >
-                <div class="input-group has-validation">               
-                  <input
-                    type="number" 
-                    class="form-control is-invalid"  
-                    placeholder="***" 
-                    id="edadPersonas"
-                    aria-describedby="validationServerUsernameFeedback"
-                  />
-                  <div
-                    id="validationServerUsernameFeedback"
-                    class="invalid-feedback"
-                  >
+                <label for="edadPersonas" class="form-label">Edad</label>
+                <div class="input-group has-validation">
+                  <input type="number" class="form-control is-invalid" placeholder="***" id="edadPersonas"
+                    aria-describedby="validationServerUsernameFeedback" />
+                  <div id="validationServerUsernameFeedback" class="invalid-feedback">
                     Porfavor ingresar edad entre 18 y 35 años
                   </div>
                 </div>
               </div>
-  
-              
+
+
               <!--PROFESION-->
               <div class="col-md-8 mx-auto m-2">
-                <label for="profesionPersonas" class="form-label"
-                  >Profesión:</label
-                >
+                <label for="profesionPersonasSpan" class="form-label">Profesión:</label>
                 <div class="input-group has-validation">
-                  <span class="input-group-text" id="profesionPersonas">🎓</span>
-                  <input
-                    type="text"
-                    class="form-control is-invalid"
-                    placeholder="Ingrese Profesión"
-                    aria-label="profFormulario"
-                    id="profesionPersonas"                
-                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
-                  />
-                  <div
-                    id="validationServerUsernameFeedback"
-                    class="invalid-feedback"
-                  >
+                  <span class="input-group-text" id="profesionPersonasSpan">🎓</span>
+                  <input type="text" class="form-control is-invalid" placeholder="Ingrese Profesión"
+                    aria-label="profFormulario" id="profesionPersonas"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" />
+                  <div id="validationServerUsernameFeedback" class="invalid-feedback">
                     Porfavor ingresar una profesion
                   </div>
                 </div>
               </div>
-                   
+
               <!--GENERO-->
               <div class="col-md-4 mx-auto m-2">
-                <label for="inputGenderPersonas" class="form-label"
-                  >Genero</label
-                >
+                <label for="inputGenderPersonasSpan" class="form-label">Genero</label>
                 <div class="input-group has-validation">
-                  <span class="input-group-text" id="inputGenderPersonas">💬</span>
-                  <select
-                    class="form-select is-invalid"
-                    placeholder="Seleccionar..."
-                    id="inputGenderPersonas"
-                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
-                  >
-                  <option value="">Seleccionar...</option>
-                  <option value="Masculino">Masculino</option>
-                  <option value="Femenino">Femenino</option>
-                  <option value="NoEstoySeguro">No estoy seguro</option>
-                  <option value="PrefieroNoDecir">Prefiero no decir</option>                
-                  <option value="Otro">Otro...</option>                  
+                  <span class="input-group-text" id="inputGenderPersonasSpan">💬</span>
+                  <select class="form-select is-invalid" placeholder="Seleccionar..." id="inputGenderPersonas"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback">
+                    <option value="">Seleccionar...</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="NoEstoySeguro">No estoy seguro</option>
+                    <option value="PrefieroNoDecir">Prefiero no decir</option>
+                    <option value="Otro">Otro...</option>
                   </select>
                   <div id="validationRegionPersonasDiv" class="invalid-feedback">
                     Porfavor clickear una selección
                   </div>
                 </div>
               </div>
-  
+
               <!--MAIL-->
               <div class="col-md-8 mx-auto m-2">
-                <label for="inputEmailPersonas" class="form-label"
-                  >E-Mail</label
-                >
+                <label for="inputEmailPersonasSpan" class="form-label">E-Mail</label>
                 <div class="input-group has-validation">
-                  <span class="input-group-text" id="inputEmailPersonas">📧</span>
-                  <input
-                    type="email"
-                    class="form-control is-invalid"
-                    placeholder="ejemplo@ejemplo.com"
-                    id="inputEmailPersonas"
-                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
-                  />
-                  <div
-                    id="validationServerUsernameFeedback"
-                    class="invalid-feedback"
-                  >
+                  <span class="input-group-text" id="inputEmailPersonasSpan">📧</span>
+                  <input type="email" class="form-control is-invalid" placeholder="ejemplo@ejemplo.com"
+                    id="inputEmailPersonas" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" />
+                  <div id="validationServerUsernameFeedback" class="invalid-feedback">
                     Porfavor ingresar un correo válido 15-100 carácteres
                   </div>
                 </div>
               </div>
-              
+
               <!--CELULAR-->
               <div class="col-md-4 mx-auto m-2">
-                <label for="telefonoPersonas" class="form-label"
-                  >Celular</label
-                >
+                <label for="telefonoPersonasSpan" class="form-label">Celular</label>
                 <div class="input-group has-validation">
-                  <span class="input-group-text" id="telefonoPersonas">📱</span>
-                  <input
-                    type="number"
-                    class="form-control is-invalid"
-                    placeholder="+56912345678"
-                    id="telefonoPersonas"
-                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
-                  />
-                  <div
-                    id="validationServerUsernameFeedback"
-                    class="invalid-feedback"
-                  >
+                  <span class="input-group-text" id="telefonoPersonasSpan">📱</span>
+                  <input type="number" class="form-control is-invalid" placeholder="+56912345678" id="telefonoPersonas"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" />
+                  <div id="validationServerUsernameFeedback" class="invalid-feedback">
                     Porfavor ingresar un celular de largo entre 9 y 12 numeros
                   </div>
                 </div>
-              </div>            
-              
+              </div>
+
               <!--DIRECCION-->
               <div class="col-md-12 mx-auto m-2">
-                <label for="inputDirecPersonas"class="form-label">Dirección:</label>
-                <input
-                  type="text"
-                  class="form-control is-invalid"
-                  placeholder="1234 Calle Principal"
-                  aria-label="direc1Formulario"
-                  id="inputDirecPersonas"
-                  />
-                <div
-                id="validationServerUsernameFeedback"
-                class="invalid-feedback"
-              >
-                Porfavor ingresar una dirección
+                <label for="inputDirecPersonas" class="form-label">Dirección:</label>
+                <input type="text" class="form-control is-invalid" placeholder="1234 Calle Principal"
+                  aria-label="direc1Formulario" id="inputDirecPersonas" />
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Porfavor ingresar una dirección
+                </div>
               </div>
-              </div>
-             
+
               <!--TIPO DE VIVIENDA-->
               <div class="col-md-12 mx-auto m-2">
-                <label for="inputDirecPersonas2"class="form-label">Direccion 2:</label>
-                <input
-                  type="text"
-                  class="form-control is-invalid"
-                  placeholder="Departamento, oficina, casa..."
-                  aria-label="direc2Formulario"
-                  id="inputDirecPersonas2"
-                  />
-                <div
-                id="validationServerUsernameFeedback"
-                class="invalid-feedback"
-              >
-                Porfavor ingresar tipo de direccion
+                <label for="inputDirecPersonas2" class="form-label">Direccion 2:</label>
+                <input type="text" class="form-control is-invalid" placeholder="Departamento, oficina, casa..."
+                  aria-label="direc2Formulario" id="inputDirecPersonas2" />
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Porfavor ingresar tipo de direccion
+                </div>
               </div>
-              </div>
-  
+
               <!--REGION-->
               <div class="col-md-6 mx-auto m-2">
-                <label for="inputRegionPersonas" class="form-label"
-                  >Región</label
-                >
-                <div class="input-group has-validation">              
-                  <select
-                    class="form-select is-invalid"
-                    placeholder="Seleccionar..."
-                    id="inputRegionPersonas"
-                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
-                  >
+                <label for="inputRegionPersonas" class="form-label">Región</label>
+                <div class="input-group has-validation">
+                  <select class="form-select is-invalid" placeholder="Seleccionar..." id="inputRegionPersonas"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback">
                     <option value="">Seleccionar...</option>
                     <option value="Valparaiso">Valparaiso</option>
                     <option value="Metropolitana">Metropolitana</option>
                     <option value="OHiggins">O'Higgins</option>
-                    <option value="LaAraucania">La Araucania</option>                  
+                    <option value="LaAraucania">La Araucania</option>
                   </select>
                   <div id="validationRegionPersonasDiv" class="invalid-feedback">
                     Porfavor clickear una selección
                   </div>
                 </div>
               </div>
-  
+
               <!--COMUNA-->
               <div class="col-md-4 mx-auto m-2">
-                <label for="inputComunaPersonas" class="form-label"
-                  >Comuna</label
-                >
-                <div class="input-group has-validation">              
-                  <select
-                    class="form-select is-invalid"
-                    placeholder="Seleccionar..."
-                    id="inputComunaPersonas"
-                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
-                  >
-                  <option value="">Seleccionar...</option>
-                  <option value="Limache">Limache</option>
-                  <option value="Quillota">Quillota</option>
-                  <option value="ViñaDelMar">Viña Del Mar</option>
-                  <option value="Olmue">Olmué</option>                  
+                <label for="inputComunaPersonas" class="form-label">Comuna</label>
+                <div class="input-group has-validation">
+                  <select class="form-select is-invalid" placeholder="Seleccionar..." id="inputComunaPersonas"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback">
+                    <option value="">Seleccionar...</option>
+                    <option value="Limache">Limache</option>
+                    <option value="Quillota">Quillota</option>
+                    <option value="ViñaDelMar">Viña Del Mar</option>
+                    <option value="Olmue">Olmué</option>
                   </select>
                   <div id="validationComunaPersonasDiv" class="invalid-feedback">
                     Porfavor clickear una selección
                   </div>
                 </div>
-              </div>            
-  
+              </div>
+
               <!--CODIGO POSTAL-->
               <div class="col-md-2 mx-auto m-2">
-                <label for="inputCodPostalPersonas" class="form-label"
-                  >Codigo Postal</label
-                >              
-                  <input
-                    type="number"
-                    class="form-control is-invalid"
-                    placeholder="*****"
-                    id="inputCodPostalPersonas"
-                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
-                  />
-                  <div
-                    id="validationServerUsernameFeedback"
-                    class="invalid-feedback"
-                  >
-                    Porfavor ingresar su codigo postal
-                  </div>
+                <label for="inputCodPostalPersonas" class="form-label">Codigo Postal</label>
+                <input type="number" class="form-control is-invalid" placeholder="*****" id="inputCodPostalPersonas"
+                  aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" />
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Porfavor ingresar su codigo postal
                 </div>
-              
+              </div>
+
               <!--MOTIVACIÓN-->
               <div class="col-md-12 container m-1 ">
                 <label for="motivacionTexto">🐶Cuentanos que te motiva querer adoptar🐶 </label>
-                <textarea class="form-control"
-                          id="motivacionTexto" 
-                          rows="4" 
-                          cols="50">                        
+                <textarea class="form-control" id="motivacionTexto" rows="4" cols="50">
                         </textarea>
               </div>
               <!--CHECK BOX-->
@@ -404,69 +276,72 @@ g. Celular: largo entre 9 y 12.
                     Recibir correos
                   </label>
                 </div>
-    
-              </div>     
-              
+
+              </div>
+
               <!--BOTON REGISTRO-->
               <div class="d-flex flex-row">
                 <div class="p-2">
-                  <button type="submit" id="idButtonEnviarPersonas" class="btn btn-formulario" disabled>Enviar</button>
+                  <button type="button" id="idButtonEnviarPersonas" class="btn btn-formulario"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalPersonasEnviar" 
+                  onclick="traerDatosModalPersonas()"
+                  disabled>Enviar</button>
                 </div>
                 <div class="p-2">
-                  <button
-                    type="button"
-                    class="btn btn-formulario-carta"
+                  <button type="button" class="btn btn-formulario-carta" 
                     data-bs-toggle="modal"
-                    data-bs-target="#modalPersonas"
-                    onclick="traerDatosModalPersonas()"
-                  >
+                    data-bs-target="#modalPersonas" onclick="traerDatosModalPersonas()">
                     Ver Carta
                   </button>
+                  <!-- Modal -->
+                  <div class="modal fade " id="modalPersonas" tabindex="-1" aria-labelledby="modalPersonasLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalPersonasLabel">Vista previa carta</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="divModalPersonas">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Button trigger modal -->
                 <!-- Modal -->
-                <div class="modal fade " id="modalPersonas" tabindex="-1" aria-labelledby="modalPersonasLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg">
+                <div class="modal fade" id="modalPersonasEnviar" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="modalPersonasLabel">Vista previa carta</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><i
+                            class="ms-3 bi bi-info-square-fill info me-3"></i>Información</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body" id="divModalPersonas">
+                      <div class="modal-body" id="divModalPersonasEnviar">
+                        
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="index.html"><button type="button" class="btn btn-formulario">Continuar</button></a>
                       </div>
                     </div>
                   </div>
                 </div>
-                </div>            
-  
-              <!-- Button trigger modal -->
-              <!-- Modal -->
-              <div class="modal fade" id="modalPersonas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="ms-3 bi bi-info-square-fill info me-3"></i>Información</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p class="lead m-3"> Postulación de usuario nuevo enviada con éxito.😁 </p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <a href="index.html"><button type="button" class="btn btn-formulario" >Continuar</button></a>        
-                    </div>
-                  </div>
-                </div>
-              </div>            
             </form>
           </div>
+
         </div>
       </div>
 
-      
 
-    </div>       
+
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
