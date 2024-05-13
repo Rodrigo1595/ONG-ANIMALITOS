@@ -1,4 +1,5 @@
 import { getKeys } from "../utils/api_keys_public.js";
+
 $(document).ready(async function () {
   // Eventos
   $("input").focusout(function () {
@@ -55,7 +56,6 @@ $(document).ready(async function () {
 
   //Carga API
   let apiData = getKeys();
-  // Revisar carga de DOM para luego poner los tooltips
   let data = await getData(apiData);
   let dataAleatoria = [];
     while (dataAleatoria.length < 6) {
@@ -76,8 +76,7 @@ $(document).ready(async function () {
                         <li>${element.tipo} </li>
                         <li>${capitalize(element.genero)}</li>
                         <li>${element.edad}</li>
-                        <li>Ubicación: ${element.comuna} , ${element.region}</li>
-                        
+                        <li>Ubicación: ${element.comuna} , ${element.region}</li>      
                     </ul>
                   </p>
                   <div class="d-flex justify-content-evenly">
@@ -94,7 +93,7 @@ $(document).ready(async function () {
     $("#containerAnimales").append(htmlAnimal);
   }
 
-
+  // Revisar carga de DOM para luego poner los tooltips
   // Iniciar reconocimiento tooltip
   $('[data-toggle="tooltip"]').tooltip();
   const popoverTriggerList = document.querySelectorAll(
@@ -116,10 +115,7 @@ async function getData(params) {
     let data = $.ajax({
       type: "GET",
       async: false,
-      url: params.values[2].huachitos,
-      headers: {
-        "Content-Type": "application/json",
-      },
+      url: params.values[2].huachitos
     });
     return data;
   } catch (error) {
