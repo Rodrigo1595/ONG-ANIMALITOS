@@ -13,6 +13,15 @@ export function getKeys() {
             },
             {
                 "huachitos":"https://huachitos.cl/api/animales"
+            },
+            {
+                "region":"https://apis.digital.gob.cl/dpa/regiones"
+            },
+            {
+                "provincia":"https://apis.digital.gob.cl/dpa/provincias"
+            },
+            {
+                "comuna":"https://apis.digital.gob.cl/dpa/comunas"
             }
 
         ]
